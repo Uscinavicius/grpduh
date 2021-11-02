@@ -32,6 +32,21 @@
     
 - MySQL with docker : https://hub.docker.com/_/mysql
 
+~~sudo docker run --name testdb-mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:latest~~
+
+sudo docker run --name testdb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
+
+local login : 
+![image](https://user-images.githubusercontent.com/31678437/139952674-9bcddcf5-231e-44e2-8828-cb422df2bdca.png)
+
+type exit to leave
+    
+Using MySQL Workbench
+
+    External login for DB:
+    - ServerIP:3306
+    - password
+
 
 ## Code Project Ideas
 DeltaX
