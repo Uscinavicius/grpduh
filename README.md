@@ -30,7 +30,7 @@
 ![image](https://user-images.githubusercontent.com/31678437/139942677-cf2ac15a-dab3-488f-a895-031e893b710d.png)
     
     
-- MySQL with docker : https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash
+- MySQL with docker : https://hub.docker.com/_/mysql
 
 
 ## Code Project Ideas
