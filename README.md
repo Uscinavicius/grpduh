@@ -46,6 +46,9 @@ Using MySQL Workbench
     External login for DB:
     - ServerIP:3306
     - password
+    
+Other:
+https://www.youtube.com/watch?v=kphq2TsVRIs&ab_channel=DatabaseStar
 
 
 ## Code Project Ideas
