@@ -9,9 +9,10 @@
 - Game Server
 
 ## Technoloy 
-- CentOS 8
-- XDRP
-- Git Hub hah
+- CentOS 8 https://www.centos.org/
+- XDRP http://xrdp.org/
+- Git Hub https://github.com/
+- Boxes https://wiki.gnome.org/Apps/Boxes
 
 ## Code Project Ideas
 DeltaX
