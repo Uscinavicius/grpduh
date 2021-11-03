@@ -1,17 +1,23 @@
 package com.grpduh.budget.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name = "Person") // This tells Hibernate to make a table out of this class
+@Entity(name = "person") // This tells Hibernate to make a table out of this class
 public class Person {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
   private int id;
+
+  @Column(name = "name")
   private String name;
+
+  @Column(name = "password")
   private String password;
 
   public Person() {

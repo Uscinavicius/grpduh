@@ -1,20 +1,18 @@
 package com.grpduh.budget.controller;
 
-import java.util.List;
-
 import com.grpduh.budget.entity.Person;
 import com.grpduh.budget.repo.DataRepo;
 import com.grpduh.budget.repo.PersonRepo;
 import com.grpduh.budget.entity.Data;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller // This means that this class is a Controller
+@RestController // This means that this class is a Controller
 @RequestMapping(path="/Budget") // This means URL's start with /demo (after Application path)
 public class Endpoint {
   @Autowired // This means to get the bean called userRepository
