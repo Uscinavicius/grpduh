@@ -4,8 +4,6 @@ import com.grpduh.budget.entity.Person;
 import com.grpduh.budget.repo.InformationRepo;
 import com.grpduh.budget.repo.PersonRepo;
 
-import java.util.List;
-
 import com.grpduh.budget.entity.Information;
 
 import org.springframework.beans.factory.annotation.Autowired;

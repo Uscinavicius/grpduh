@@ -1,4 +1,7 @@
 FROM openjdk:11-jdk
-ARG JAR_FILE=build/libs/*.jar
-COPY ${JAR_FILE} budgetapp.jar
-ENTRYPOINT ["java","-jar","/budgetapp.jar"]
+ARG APP_NAME="budget"
+ARG APP_VERSION="0.0.1"
+ARG JAR_FILE="build/libs/${APP_NAME}-${APP_VERSION}.jar"
+
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar", "app.jar"]

@@ -2,8 +2,8 @@ plugins {
 	id 'org.springframework.boot' version '2.5.6'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
-	id "com.palantir.docker" version "0.22.1"
-	id "com.palantir.docker-run" version "0.22.1"
+	id "com.palantir.docker" version "0.26.0"
+	id "com.palantir.docker-run" version "0.26.0"
 }
 
 group = 'com.grpduh'
@@ -36,14 +36,16 @@ test {
 }
 
 docker {
+	dockerfile project.file('Dockerfile')
     name "${project.name}:${project.version}"
-    files 'budgetapp.jar'
-    tag 'DockerHub', "uscinavicius/budgetapp:${project.version}"
+    files bootJar.archiveFile.get()
+	buildArgs(['JAR_FILE': "${bootJar.archiveFileName.get()}"])
+    tag 'DockerHub', "uscinavicius/${project.name}:${project.version}"
 }
 
  dockerRun {
     name "${project.name}"
     image "${project.name}:${project.version}"
-    ports '8080:8080'
+    ports '8081:8081'
     clean true
 }
