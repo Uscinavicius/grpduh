@@ -37,9 +37,9 @@ public class Endpoint {
   }
 
   @GetMapping(path="/statement/{id}")
-  public @ResponseBody Person getStatementId(@PathVariable("id") int id) {
+  public @ResponseBody Information getStatementId(@PathVariable("id") int id) {
     // This returns a JSON or XML with the users
-    return (Person) userRepository.findById(id);
+    return (Information) dataRepository.findById(id);
   }
 
   @GetMapping(path = "/addPerson")
@@ -53,7 +53,7 @@ public class Endpoint {
   public @ResponseBody String addNewData() {;
     Information data_ = new Information(123,"Store","Stuff","Things");
     dataRepository.save(data_);
-      return "User Created";
+      return "Data Created";
   }
 
   @GetMapping(path = "/allPersons")
