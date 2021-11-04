@@ -49,7 +49,9 @@ Using MySQL Workbench
     
 Other:
 https://www.youtube.com/watch?v=kphq2TsVRIs&ab_channel=DatabaseStar
-
+https://codingnconcepts.com/spring-boot/deployment-of-microservices-using-docker-and-jenkins/
+https://spring.io/guides/gs/spring-boot-docker/
+Jenkins https://www.youtube.com/watch?v=pMO26j2OUME&ab_channel=TechWorldwithNana
 
 ## Code Project Ideas
 DeltaX
