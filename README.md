@@ -53,6 +53,9 @@ https://codingnconcepts.com/spring-boot/deployment-of-microservices-using-docker
 https://spring.io/guides/gs/spring-boot-docker/
 Jenkins https://www.youtube.com/watch?v=pMO26j2OUME&ab_channel=TechWorldwithNana
 
+##FRONTEND
+https://code.visualstudio.com/docs/nodejs/reactjs-tutorial
+
 ## Code Project Ideas
 DeltaX
 
